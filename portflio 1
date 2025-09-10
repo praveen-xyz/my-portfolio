@@ -139,7 +139,7 @@
             </div>
             <div class="card" style="flex:1">
               <div style="font-weight:700">Contact</div>
-              <div style="color:var(--muted);margin-top:6px">praveen@example.com</div>
+              <div style="color:var(--muted);margin-top:6px">hello.praveenraj35@gmail.com</div>
             </div>
           </div>
         </div>
@@ -152,6 +152,9 @@
             <img src="https://images.unsplash.com/photo-1523475496153-3d6ccf006c5f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1">
             <div class="pbody">
               <div style="font-weight:700">Simple Calculator (Python)</div>
+             
+
+        
               <div style="color:var(--muted);margin-top:8px">A console-based calculator built in Python for learning basic arithmetic operations and CLI interaction.</div>
               <div style="margin-top:10px"><a style="text-decoration:none;color:var(--accent);font-weight:700" href="#">View code</a></div>
             </div>
@@ -192,7 +195,7 @@
         <h2>Contact</h2>
         <div class="contact">
           <div class="hero-card">
-            <form action="mailto:praveen@example.com" method="post" enctype="text/plain">
+            <form action="mail to: hello.praveenraj35@gmail.com" method="post" enctype="text/plain">
               <input type="text" name="name" placeholder="Your name" required>
               <input type="email" name="email" placeholder="Your email" required>
               <textarea name="message" rows="6" placeholder="Message..." required></textarea>
@@ -202,241 +205,9 @@
 
           <div class="hero-card" style="display:flex;flex-direction:column;justify-content:center;gap:12px">
             <div style="font-weight:700">Let's connect</div>
-            <div style="color:var(--muted)">Email: praveen@example.com</div>
-            <div style="color:var(--muted)">GitHub: github.com/your-username</div>
-            <div style="color:var(--muted)">LinkedIn: linkedin.com/in/your-profile</div>
-            <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent);font-weight:700">Download resume</a></div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      <div>Made with ❤️ by Praveen • © <span id="year"></span></div>
-    </footer>
-  </div>
-
-  <script>
-    // small helpers
-    document.getElementById('year').textContent = new Date().getFullYear();
-    // smooth scrolling for internal links
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        const t = document.querySelector(a.getAttribute('href'));
-        if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); }
-      })
-    });
-  </script>
-</body>
-</html>
-vv<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Praveen Raj — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0f1724; --card:#0b1220; --accent:#4f46e5; --muted:#9aa4b2; --glass: rgba(255,255,255,0.03);
-      --radius:16px; --maxw:1100px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial; background:linear-gradient(180deg,var(--bg),#061021); color:#e6eef8;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-    }
-    .container{max-width:var(--maxw); margin:28px auto; padding:28px}
-
-    /* header */
-    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700}
-    nav{display:flex;gap:18px}
-    nav a{color:var(--muted);text-decoration:none;font-weight:600}
-    .cta{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
-
-    /* hero */
-    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:28px}
-    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:28px;border-radius:18px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
-    h1{margin:0;font-size:32px}
-    p.lead{color:var(--muted);margin-top:8px;line-height:1.6}
-    .tags{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap}
-    .tag{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-weight:600}
-
-    .profile{background:linear-gradient(180deg,#071226, rgba(255,255,255,0.02));padding:20px;border-radius:14px;display:flex;flex-direction:column;align-items:center}
-    .avatar{width:220px;height:220px;border-radius:18px; background:linear-gradient(135deg,#0f1724,#062235); display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--muted)}
-    .small{font-size:14px;color:var(--muted);margin-top:8px}
-
-    /* sections */
-    section{margin-top:26px}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .card{background:var(--card);padding:16px;border-radius:12px}
-    .project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .project{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:12px; overflow:hidden}
-    .project img{width:100%;height:160px;object-fit:cover;display:block}
-    .project .pbody{padding:12px}
-    .skills{display:flex;flex-direction:column;gap:10px}
-    .skill{display:flex;justify-content:space-between;align-items:center}
-    .bar{height:10px;background:rgba(255,255,255,0.06);border-radius:999px;overflow:hidden;width:60%}
-    .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#06b6d4)}
-
-    /* contact */
-    .contact{display:grid;grid-template-columns:1fr 360px;gap:18px}
-    form{display:flex;flex-direction:column;gap:12px}
-    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px;border-radius:10px;color:inherit}
-    button{background:var(--accent);border:none;padding:12px;border-radius:10px;color:white;font-weight:700}
-
-    footer{margin-top:28px; color:var(--muted);text-align:center}
-
-    /* responsive */
-    @media (max-width:980px){
-      .hero{grid-template-columns:1fr;}
-      .project-grid, .cards{grid-template-columns:repeat(2,1fr)}
-      .contact{grid-template-columns:1fr}
-    }
-    @media (max-width:560px){
-      nav{display:none}
-      header{gap:10px}
-      .project-grid, .cards{grid-template-columns:1fr}
-      .avatar{width:160px;height:160px}
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">PR</div>
-        <div>
-          <div style="font-weight:700">Praveen Raj</div>
-          <div style="font-size:12px;color:var(--muted)">B.Tech IT student • NPRCET • 2nd Year</div>
-        </div>
-      </div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <a class="cta" href="#contact">Hire / Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-card">
-          <h1>Hi — I'm <span style="color:var(--accent)">Praveen</span>, a student developer who loves building simple, useful apps.</h1>
-          <p class="lead">Second-year B.Tech IT student at NPRCET. I enjoy Python, web development, and creating small projects that solve real problems. Currently learning full-stack development and working on internship projects.</p>
-          <div class="tags">
-            <div class="tag">Python</div>
-            <div class="tag">HTML & CSS</div>
-            <div class="tag">JavaScript</div>
-            <div class="tag">Data Structures</div>
-            <div class="tag">Problem Solving</div>
-          </div>
-          <div style="margin-top:18px;display:flex;gap:10px">
-            <a class="cta" href="#projects">See projects</a>
-            <a style="background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;text-decoration:none;color:var(--muted);font-weight:700" href="#contact">Contact me</a>
-          </div>
-        </div>
-
-        <aside class="profile">
-          <div class="avatar">Your Photo</div>
-          <div style="text-align:center;margin-top:12px">
-            <div style="font-weight:700">Praveen Raj</div>
-            <div class="small">B.Tech IT • NPRCET</div>
-            <div class="small">Second year • Passionate about programming</div>
-            <div style="margin-top:12px;display:flex;gap:8px">
-              <a style="text-decoration:none;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:700" href="#">Resume</a>
-              <a style="text-decoration:none;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted);font-weight:700" href="#">GitHub</a>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about">
-        <div class="hero-card">
-          <h2>About me</h2>
-          <p style="color:var(--muted);line-height:1.6">I'm a 2nd year B.Tech (Information Technology) student at NPRCET. I build small web apps and Python scripts — from calculators to simple automation tools. I enjoy learning new things, solving coding challenges, and collaborating on projects.</p>
-          <div style="display:flex;gap:12px;margin-top:14px">
-            <div class="card" style="flex:1">
-              <div style="font-weight:700">Education</div>
-              <div style="color:var(--muted);margin-top:6px">B.Tech IT — NPRCET</div>
-            </div>
-            <div class="card" style="flex:1">
-              <div style="font-weight:700">Interests</div>
-              <div style="color:var(--muted);margin-top:6px">Python, Web Dev, Data, Open Source</div>
-            </div>
-            <div class="card" style="flex:1">
-              <div style="font-weight:700">Contact</div>
-              <div style="color:var(--muted);margin-top:6px">praveen@example.com</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <h2 style="margin-bottom:10px">Selected projects</h2>
-        <div class="project-grid">
-          <div class="project">
-            <img src="https://images.unsplash.com/photo-1523475496153-3d6ccf006c5f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 1">
-            <div class="pbody">
-              <div style="font-weight:700">Simple Calculator (Python)</div>
-              <div style="color:var(--muted);margin-top:8px">A console-based calculator built in Python for learning basic arithmetic operations and CLI interaction.</div>
-              <div style="margin-top:10px"><a style="text-decoration:none;color:var(--accent);font-weight:700" href="#">View code</a></div>
-            </div>
-          </div>
-
-          <div class="project">
-            <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 2">
-            <div class="pbody">
-              <div style="font-weight:700">To-Do Web App</div>
-              <div style="color:var(--muted);margin-top:8px">A minimal to-do app using HTML/CSS/JS — learn DOM manipulation and localStorage.</div>
-              <div style="margin-top:10px"><a style="text-decoration:none;color:var(--accent);font-weight:700" href="#">Live demo</a></div>
-            </div>
-          </div>
-
-          <div class="project">
-            <img src="https://images.unsplash.com/photo-1526378721173-3d6b79f6a0e9?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Project 3">
-            <div class="pbody">
-              <div style="font-weight:700">Password Generator</div>
-              <div style="color:var(--muted);margin-top:8px">A simple password generator with options for length and character types (Python & JS versions).</div>
-              <div style="margin-top:10px"><a style="text-decoration:none;color:var(--accent);font-weight:700" href="#">Source</a></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="hero-card skills">
-          <div class="skill"><div style="font-weight:700">Python</div><div class="bar"><span style="width:85%"></span></div></div>
-          <div class="skill"><div style="font-weight:700">HTML & CSS</div><div class="bar"><span style="width:80%"></span></div></div>
-          <div class="skill"><div style="font-weight:700">JavaScript</div><div class="bar"><span style="width:65%"></span></div></div>
-          <div class="skill"><div style="font-weight:700">Data Structures</div><div class="bar"><span style="width:60%"></span></div></div>
-          <div class="skill"><div style="font-weight:700">Git & GitHub</div><div class="bar"><span style="width:55%"></span></div></div>
-        </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <div class="contact">
-          <div class="hero-card">
-            <form action="mailto:praveen@example.com" method="post" enctype="text/plain">
-              <input type="text" name="name" placeholder="Your name" required>
-              <input type="email" name="email" placeholder="Your email" required>
-              <textarea name="message" rows="6" placeholder="Message..." required></textarea>
-              <button type="submit">Send message</button>
-            </form>
-          </div>
-
-          <div class="hero-card" style="display:flex;flex-direction:column;justify-content:center;gap:12px">
-            <div style="font-weight:700">Let's connect</div>
-            <div style="color:var(--muted)">Email: praveen@example.com</div>
-            <div style="color:var(--muted)">GitHub: github.com/your-username</div>
-            <div style="color:var(--muted)">LinkedIn: linkedin.com/in/your-profile</div>
+            <div style="color:var(--muted)">Email: hello.praveenraj35@gmail.com<div>
+            <div style="color:var(--muted)">GitHub:github.com/praveen-xyz</div>
+            <div style="color:var(--muted)">LinkedIn:in/praveenraj-m-8b7410361</div>
             <div style="margin-top:8px"><a href="#" style="text-decoration:none;color:var(--accent);font-weight:700">Download resume</a></div>
           </div>
         </div>
